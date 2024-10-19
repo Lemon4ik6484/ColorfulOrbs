@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "colorful-orbs",
+	"version": "${version}",
+	"name": "Colorful Orbs",
+	"description": "Allows to change XP orbs color to what ever you like!",
+	"authors": [
+		"Lemonnik6484"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/colorful-orbs",
+		"sources": "https://github.com/Lemon4ik6484/ColorfulOrbs",
+		"issues": "https://github.com/Lemon4ik6484/ColorfulOrbs/issues"
+	},
+	"license": "AGPL-3.0",
+	"icon": "assets/colorful-orbs/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"dev.lemonnik.colorfulorbs.ColorfulOrbs"
+		],
+		"fabric-datagen": [
+			"dev.lemonnik.colorfulorbs.ColorfulOrbsDataGenerator"
+		]
+	},
+	"mixins": [
+		"colorful-orbs.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
